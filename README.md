@@ -19,7 +19,7 @@
 ### 从源码运行
 
 ```bash
-git clone #todo
+git clone https://github.com/hawav/shenying_continent.git
 cd shenying_continent
 cargo run
 ```
