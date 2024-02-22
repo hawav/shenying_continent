@@ -16,6 +16,12 @@
 
 现支持在 PC 命令行游玩，未来会支持浏览器。
 
+### 下载预编译的游戏
+
+现支持 Windows 平台与 Mac 平台。
+
+https://github.com/hawav/shenying_continent/releases
+
 ### 从源码运行
 
 ```bash
