@@ -128,7 +128,11 @@ impl Action {
             Action::Area => area_menu(state),
 
             // 装备菜单
-            Action::DropWeapon(_) => state.equipment.weapon = None,
+            Action::DropWeapon(_) => {
+                if let Some(weapon) = state.equipment.weapon.take() {
+                    state.backpack.weapons.push(weapon);
+                }
+            }
             Action::EquipWeapon => state.equipment.weapon = weapon_select_menu(state),
 
             // 商人菜单
